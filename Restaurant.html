@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza By The Bay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body class="main">
+    <div class="background">
+            
+            <ul class="btn">                              
+                <li> <a href=""> Home </a> </li>
+                <li> <a href=""> Menu </a> </li>
+                <li> <a href=""> Order </a> </li>
+                <li> <a href=""> Ambience </a> </li>
+                <li> <a href=""> Contact Us </a> </li>
+            </ul>
+            
+            <div class="intro-front">
+            <h1 style="color: #efce46;"> Pizza By The Bay</h1>  
+            <p>Estd. 1998</p><br>
+            <h4>TIME OPEN</h4><br>
+            <p style="font-size: 26px;"><b>Monday - Friday</b></p>
+            <p style="font-size: 20px;">8am - 11am (Breakfast)<br>
+            11am - 10pm (Lunch/Dinner)</p><br>
+            <p style="font-size: 26px;"><b>Saturday - Sunday</b></p>
+            <p style="font-size: 20px;">9am - 12pm (Breakfast)<br>
+            12pm - 10pm (Lunch/Dinner)</p> <br>       
+            <h6> Call Us: 020-1214423/ +91 9101001010 </h6><br>
+
+            <a href="#reservation" class="scroll-form">Reserve a table</a> 
+        </div>
+        <section class="reservation">
+        <div id="reservation">
+            <img class="logo" src="icon.png" alt="Pizza by the bay logo"><figcaption class="logo-caption">&copy; Created by Divya Londhe</figcaption>
+            <form id="form-reservation" action="mailto:pizzabythebay@dummyemail.com"> 
+                <label>Full Name:</label>
+                <input type="text" placeholder="Name" class="form-input" required> <br><br>
+                <label>Contact no.:</label>
+                <input type="tel" placeholder="Phone no." class="form-input" length="10" required > <br><br>
+                <label>Email id:</label>
+                <input type="email" placeholder="Email" class="form-input" required> <br><br>
+                <label>Number of guests:</label>     
+                <input type="number" placeholder="Members" class="form-input" required> <br><br>
+                <label>Date:</label>
+                <input type="date" placeholder="Date" class="form-input" required> <br><br>
+                <label>Time:</label>
+                <input type="time" placeholder="00:00" class="form-input" required><br><br>
+                <label>Decoration:</label>
+                <select class="form-input">
+                    <option value="None">-NA-</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Anniversary">Anniversary</option>
+                    <option value="Party">Party</option>
+                </select>
+                <br><br>
+                <input type="checkbox" value="Agree" required> I have read and agree to all the <b>Terms & Conditions</b>
+                <br><br>
+                <input type="submit" value="Submit"class="send" onclick="confirm()">
+            </form>
+    </div>
+</section>
+
+</div>
+<footer class="bottom"><p>&#169 Pizza By The Bay 2023</p> <p class="connect">Connect with us on Instagram|Facebook|Twitter</p></footer>
+
+<script>
+    function confirm(){
+        document.getElementsByClassName("send").confirm("Are you sure you want to reserve the table?");
+        }
+
+    function submit(){
+        alert("Thankyou!! for Reserving your spot with view. See you soon.");
+    }
+</script>
+</body> 
+</html>
